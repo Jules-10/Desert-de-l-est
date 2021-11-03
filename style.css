@@ -1,0 +1,123 @@
+/* 
+Charte graphique
+
+Couleurs :
+#3F292B
+#cc9e42
+#DA6C89
+#ADFFE8
+#DCEDB9
+#F6E5CB - background
+
+fonts :
+Cinzel - titres
+Fauna One - contenu
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Fauna+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #3F292B ;
+    scroll-behavior: smooth;
+    transition-duration: .3s;
+}
+
+body{
+    padding: 75px 40px 0 40px;
+    min-height: 100vh;
+    background: #F6E5CB;
+    font-family: "Fauna One", serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Cinzel", serif;
+}
+
+nav{
+    background: #cc9e42;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 75px;
+    padding: 0 40px;
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+}
+nav a:hover{
+    background-color: #ffffff22;
+    border-radius: 3px;
+}
+
+header{
+    margin-top: 20vh;
+    min-height: 70vh;
+}
+header h1{
+    font-size: 4em;
+    width: 90vw;
+    padding: 0 5vw 40px 5vw;
+}
+header h3{
+    font-size: 2em;
+    width: 90vw;
+    padding: 0 5vw;
+}
+
+
+section{
+    margin-top: 0;
+}
+section h2{
+    
+}
+
+
+
+
+
+
+
+
+footer{
+    margin: -40px;
+    position: absolute;
+    z-index: -10;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer img{
+    object-fit: cover;
+    width: 100vw;
+    height: auto;
+}
+
+
+div.triangle-bg#bg-bottom{
+    box-sizing: content-box;
+    opacity: 0.5;
+    width: 0;
+    height: 0;
+    border-bottom: 40vw solid red;
+    border-left: 200vw solid transparent;
+    z-index: 5;
+    position: absolute;
+    margin: 0 0 0 -20vw;
+    top: calc(100vh - 700px);
+}
