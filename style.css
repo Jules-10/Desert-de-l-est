@@ -2,16 +2,28 @@
 Charte graphique
 
 Couleurs :
-#3F292B
-#cc9e42
-#DA6C89
-#ADFFE8
-#DCEDB9
-#F6E5CB - background
+    #3F292B
+    #cc9e42 - hsl(40,68,80)
+    #DA6C89
+    #ADFFE8
+    #DCEDB9
+    #F6E5CB - background
+
+    L'équipe: 
+        origin    : hsl(40,68%,80%)   not used
+
+        green     : hsl(100,70%,20%)  culture
+        blue      : hsl(190,70%,20%)  science
+        dark blue : hsl(230,70%,20%)  government
+        purple    : hsl(280,70%,20%)  independant projects
+
+        pink      : hsl(320,70%,20%)  ...
+        red       : hsl(350,70%,20%)  ...
+
 
 fonts :
-Cinzel - titres
-Fauna One - contenu
+    Cinzel - titres
+    Fauna One - contenu
 
 */
 
@@ -105,24 +117,30 @@ section article.flex-equal >*{
 }
 section article.flex-equal img{
     margin-bottom: 10px;
+    width: 35vw;
 }
 section article.flex-equal p {
     align-self: flex-start;
     padding-top: 10px;
+    width: 45vw;
 }
+
 article.team{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-top: 60px;
 }
 .personne{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: 40px 20px;
     border-radius: 20px;
-    width: 200px;
+    width: 220px;
+    height: 300px;
+    text-align: center;
     margin: 20px;
     background: #3F292B;
     box-shadow: 1px 3px 10px 1px #3F292B;
@@ -137,18 +155,55 @@ article.team{
 }
 .personne h3{
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+}
+.personne h4{
+    font-size: 0.9em;
+}
+.personne .description{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.personne.fondateur{
-    background: #127D5F;
-    box-shadow: 1px 3px 10px 1px #127D5Faa;
+.team.culture .personne{
+    background: hsl(100,70%,20%);
+    box-shadow: 1px 3px 10px 1px hsla(100,70%,20%,.7);
+}
+.team.science .personne{
+    background: hsl(190,70%,20%);
+    box-shadow: 1px 3px 10px 1px hsla(190,70%,20%,.7);
+}
+.team.government .personne{
+    background: hsl(230,70%,20%);
+    box-shadow: 1px 3px 10px 1px hsla(230,70%,20%,.7);
+}
+.team.inde_project .personne{
+    background: hsl(280,70%,20%);
+    box-shadow: 1px 3px 10px 1px hsla(280,70%,20%,.7);
 }
 
-.personne.superviseur{
-    background: #8F0024;
-    box-shadow: 1px 3px 10px 1px #8F0024aa;
+.team.culture .personne:hover{
+    background: hsl(100,70%,25%);
+    box-shadow: 1px 3px 10px 4px hsla(100,70%,25%,.7);
 }
+.team.science .personne:hover{
+    background: hsl(190,70%,25%);
+    box-shadow: 1px 3px 10px 4px hsla(190,70%,25%,.7);
+}
+.team.government .personne:hover{
+    background: hsl(230,70%,25%);
+    box-shadow: 1px 3px 10px 4px hsla(230,70%,25%,.7);
+}
+.team.inde_project .personne:hover{
+    background: hsl(280,70%,25%);
+    box-shadow: 1px 3px 10px 4px hsla(280,70%,25%,.7);
+}
+
+
+
+
 
 
 
@@ -194,5 +249,5 @@ div.diag-bg{
     top: 110vh;
 }
 .diag-bg:nth-child(2){
-    top: 300vh;
+    top: 320vh;
 }
