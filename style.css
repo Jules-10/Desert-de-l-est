@@ -246,7 +246,7 @@ div.diag-bg{
     position: absolute;
     z-index: -1;
 }
-.bg-container .diag-bg:nth-child(3n-1){
+.bg-container .diag-bg:nth-child(2n-1){
     transform: rotate(15deg);
 }
 .diag-bg:nth-child(1){
@@ -254,4 +254,10 @@ div.diag-bg{
 }
 .diag-bg:nth-child(2){
     top: 320vh;
+}
+.diag-bg:nth-child(3){
+    top: 530vh;
+}
+.diag-bg:nth-child(4){
+    top: 740vh;
 }
