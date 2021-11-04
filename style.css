@@ -64,7 +64,7 @@ nav a:hover{
 
 header{
     margin-top: 20vh;
-    min-height: 70vh;
+    min-height: 50vh;
 }
 header h1{
     font-size: 4em;
@@ -79,11 +79,77 @@ header h3{
 
 
 section{
-    margin-top: 0;
+    margin-top: 10vh;
+    padding: 15vh 5vw 40px 5vw;
 }
 section h2{
-    
+    font-size: 2.5em;
+    margin-bottom: 40px;
 }
+section p{
+    line-height: 27px;
+}
+section article.flex-equal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+section article.flex-equal:nth-child(2n+1){
+    flex-direction: row-reverse;
+}
+section article.flex-equal >*{
+    width: 40vw;
+}
+section article.flex-equal img{
+    margin-bottom: 10px;
+}
+section article.flex-equal p {
+    align-self: flex-start;
+    padding-top: 10px;
+}
+article.team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.personne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+    width: 200px;
+    margin: 20px;
+    background: #3F292B;
+    box-shadow: 1px 3px 10px 1px #3F292B;
+}
+.personne img{
+    width: 120px; height: 120px;
+    border-radius: 100px;
+}
+.personne h3, .personne h4{
+    font-family: "Fauna One", serif;
+    color: #fff;
+}
+.personne h3{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.personne.fondateur{
+    background: #127D5F;
+    box-shadow: 1px 3px 10px 1px #127D5Faa;
+}
+
+.personne.superviseur{
+    background: #8F0024;
+    box-shadow: 1px 3px 10px 1px #8F0024aa;
+}
+
 
 
 
@@ -109,15 +175,24 @@ footer img{
 }
 
 
-div.triangle-bg#bg-bottom{
-    box-sizing: content-box;
-    opacity: 0.5;
-    width: 0;
-    height: 0;
-    border-bottom: 40vw solid red;
-    border-left: 200vw solid transparent;
-    z-index: 5;
+
+
+div.diag-bg{
+    width: calc(110vw + 300px);
+    height: 110vh;
+    background: #cc9e4288;
+    transform: rotate(-15deg);
+    margin-left: -300px;
+
     position: absolute;
-    margin: 0 0 0 -20vw;
-    top: calc(100vh - 700px);
+    z-index: -1;
+}
+.bg-container .diag-bg:nth-child(3n-1){
+    transform: rotate(15deg);
+}
+.diag-bg:nth-child(1){
+    top: 110vh;
+}
+.diag-bg:nth-child(2){
+    top: 300vh;
 }
