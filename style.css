@@ -237,8 +237,8 @@ footer img{
 
 
 div.diag-bg{
-    width: calc(110vw + 300px);
-    height: 110vh;
+    width: calc(120vw + 300px);
+    height: 120vh;
     background: #cc9e4288;
     transform: rotate(-20deg);
     margin-left: -250px;
@@ -250,14 +250,14 @@ div.diag-bg{
     transform: rotate(20deg);
 }
 .diag-bg:nth-child(1){
-    top: 110vh;
+    top: 100vh;
 }
 .diag-bg:nth-child(2){
-    top: 330vh;
+    top: 350vh;
 }
 .diag-bg:nth-child(3){
-    top: 550vh;
+    top: 600vh;
 }
 .diag-bg:nth-child(4){
-    top: 770vh;
+    top: 850vh;
 }
