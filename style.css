@@ -9,8 +9,9 @@ Couleurs :
     #DCEDB9
     #F6E5CB - background
 
-    L'équipe: 
-        origin    : hsl(40,68%,80%)   not used
+    L'équipe:
+
+    (    origin    : hsl(40,68%,80%)   not used
 
         green     : hsl(100,70%,20%)  culture
         blue      : hsl(190,70%,20%)  science
@@ -19,6 +20,8 @@ Couleurs :
 
         pink      : hsl(320,70%,20%)  ...
         red       : hsl(350,70%,20%)  ...
+    )
+        gris      : #2D3A41
 
 
 fonts :
@@ -50,6 +53,9 @@ body{
 h1,h2,h3,h4,h5,h6{
     font-family: "Cinzel", serif;
 }
+a:any-link{
+    text-decoration: none;
+}
 
 nav{
     background: #cc9e42;
@@ -64,7 +70,6 @@ nav{
     display: flex;
 }
 nav a{
-    text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     padding: 20px;
@@ -142,8 +147,8 @@ article.team{
     height: 300px;
     text-align: center;
     margin: 20px;
-    background: #3F292B;
-    box-shadow: 1px 3px 10px 1px #3F292B;
+    background: #2D3A41;
+    box-shadow: 1px 3px 10px 1px #2D3A41;
 }
 .personne img{
     width: 120px; height: 120px;
@@ -167,39 +172,11 @@ article.team{
     justify-content: space-around;
 }
 
-.team.culture .personne{
-    background: hsl(100,70%,20%);
-    box-shadow: 1px 3px 10px 1px hsla(100,70%,20%,.7);
-}
-.team.science .personne{
-    background: hsl(190,70%,20%);
-    box-shadow: 1px 3px 10px 1px hsla(190,70%,20%,.7);
-}
-.team.government .personne{
-    background: hsl(230,70%,20%);
-    box-shadow: 1px 3px 10px 1px hsla(230,70%,20%,.7);
-}
-.team.inde_project .personne{
-    background: hsl(280,70%,20%);
-    box-shadow: 1px 3px 10px 1px hsla(280,70%,20%,.7);
+.personne:hover{
+    background: #464F52;
+    box-shadow: 1px 3px 10px 4px #2D3A4188;
 }
 
-.team.culture .personne:hover{
-    background: hsl(100,70%,25%);
-    box-shadow: 1px 3px 10px 4px hsla(100,70%,25%,.7);
-}
-.team.science .personne:hover{
-    background: hsl(190,70%,25%);
-    box-shadow: 1px 3px 10px 4px hsla(190,70%,25%,.7);
-}
-.team.government .personne:hover{
-    background: hsl(230,70%,25%);
-    box-shadow: 1px 3px 10px 4px hsla(230,70%,25%,.7);
-}
-.team.inde_project .personne:hover{
-    background: hsl(280,70%,25%);
-    box-shadow: 1px 3px 10px 4px hsla(280,70%,25%,.7);
-}
 
 
 
