@@ -41,14 +41,15 @@ fonts :
     scroll-behavior: smooth;
     transition-duration: .3s;
 }
-
+html, body{
+    overflow-x: hidden;
+}
 body{
     padding: 75px 40px 0 40px;
     min-height: 100vh;
     background: #F6E5CB;
     font-family: "Fauna One", serif;
     font-size: 16px;
-    overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: "Cinzel", serif;
