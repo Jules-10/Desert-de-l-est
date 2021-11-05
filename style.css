@@ -156,7 +156,7 @@ article.team{
 }
 .personne h3, .personne h4{
     font-family: "Fauna One", serif;
-    color: #fff;
+    color: #F6E5CB;
 }
 .personne h3{
     margin-top: 20px;
@@ -209,8 +209,8 @@ section#contact .media a p{
 section#contact .media a:hover{
     text-decoration: underline solid #3F292B 2px;
 }
-section#contact .media a:hover img{
-    filter: brightness(0);
+section#contact .media a:hover svg{
+    fill: #000;
 }
 
 
@@ -303,11 +303,10 @@ input{
         left: -540px;
         top: 0;
         width: 250px; max-width: 100vw;
-        height: 100vh;
+        height: 10000vh;
         padding: 60px 10px 10px 10px;
         display: flex;
         flex-direction: column;
-        border-bottom-right-radius: 7px;
     }
     nav a{
         display: block;
@@ -336,5 +335,26 @@ input{
     article.team{
         flex-direction: column;
         align-content: center;
+    }
+}
+
+@media screen and (min-width: 691px) {
+    .diag-bg:nth-child(4),.diag-bg:nth-child(5){
+        display: none;
+    }
+}
+@media screen and (max-width: 690px) {
+    section{
+        margin-top: 4vh;
+    }
+    div.diag-bg{
+        height: 100vh;
+        margin-left: -250px;
+    }
+    .diag-bg:nth-child(4){
+        top: 850vh;
+    }
+    .diag-bg:nth-child(5){
+        top: 1100vh;
     }
 }
