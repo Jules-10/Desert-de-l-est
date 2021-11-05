@@ -339,13 +339,13 @@ input{
 }
 
 @media screen and (min-width: 691px) {
-    .diag-bg:nth-child(4),.diag-bg:nth-child(5){
+    .diag-bg:nth-child(4){
         display: none;
     }
 }
 @media screen and (max-width: 690px) {
-    section{
-        margin-top: 4vh;
+    section {
+        margin-top: 3vh;
     }
     div.diag-bg{
         height: 100vh;
@@ -354,7 +354,7 @@ input{
     .diag-bg:nth-child(4){
         top: 850vh;
     }
-    .diag-bg:nth-child(5){
-        top: 1100vh;
+    section#contact{
+        margin-bottom: 40vh;
     }
 }
