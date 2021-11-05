@@ -47,10 +47,29 @@ html, body{
 body{
     padding: 75px 40px 0 40px;
     min-height: 100vh;
-    background: #F6E5CB;
+    background-color: #F6E5CB;
     font-family: "Fauna One", serif;
     font-size: 16px;
+
+    background-size: auto 100%;
 }
+
+@media screen and (min-width: 1400px) {
+    body{
+        background-image: url(images/backgrounds/large.jpg);
+    }
+}
+@media screen and (min-width: 701px) {
+    body{
+        background-image: url(images/backgrounds/medium.jpg);
+    }
+}
+@media screen and (max-width: 700px) {
+    body{
+        background-image: url(images/backgrounds/small.jpg);
+    }
+}
+
 h1,h2,h3,h4,h5,h6{
     font-family: "Cinzel", serif;
 }
@@ -273,9 +292,7 @@ div.diag-bg{
 input{
     display: none;
 }
-@media screen and (min-width: 931px) {
-    label{display: none;}
-}
+
 
 @media  screen and (max-width: 1090px) {
     section article.flex-equal{
@@ -295,7 +312,9 @@ input{
     }
 }
 
-
+@media screen and (min-width: 931px) {
+    label{display: none;}
+}
 @media screen and (max-width: 930px){
     /* nav{background-color: red;} */
 
