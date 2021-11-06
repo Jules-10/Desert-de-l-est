@@ -150,6 +150,11 @@ section article.flex-equal p {
     width: 45vw;
 }
 
+section article.text-only p{
+    text-indent: 25px;
+    margin-bottom: 2em
+}
+
 article.team{
     display: flex;
     flex-direction: row;
