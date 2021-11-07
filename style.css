@@ -214,6 +214,9 @@ ul li{
     list-style: circle outside;
     line-height: 25px;
 }
+section#relations article.team{
+    margin-top: 0;
+}
 
 section#contact .media{
     display: flex;
