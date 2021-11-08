@@ -54,14 +54,14 @@ body{
     background-size: auto 100%;
 }
 
-@media screen and (min-width: 1400px) {
-    body{
-        background-image: url(images/backgrounds/large.jpg);
-    }
-}
 @media screen and (min-width: 701px) {
     body{
         background-image: url(images/backgrounds/medium.jpg);
+    }
+}
+@media screen and (min-width: 1400px) {
+    body{
+        background-image: url(images/backgrounds/large.jpg);
     }
 }
 @media screen and (max-width: 700px) {
